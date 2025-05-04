@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sensi Babi Mdm</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #ff69b4;
+      text-align: center;
+      height: 100vh;
+      overflow: auto;
+      position: relative;
+      background-color: black;
+    }
+
+    #bg-video, #bg-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    #bg-image {
+      display: none;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px black;
+      margin: 100px auto 50px;
+      width: 90%;
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #ff69b4;
+    }
+
+    p {
+      font-size: 1.3em;
+      margin-bottom: 30px;
+      color: #ff69b4;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #7289da;
+      color: white;
+      cursor: pointer;
+      box-shadow: 2px 2px 8px black;
+    }
+
+    button:hover {
+      background-color: #5b6eae;
+    }
+
+    .social-section {
+      margin-top: 40px;
+    }
+
+    .social-section h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #ff69b4;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #ff69b4;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #ff69b4;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    .video-block {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .video-block iframe {
+      width: 300px;
+      height: 170px;
+      border-radius: 10px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+<!-- VÍDEO DE FUNDO -->
+<video autoplay muted id="bg-video">
+  <source id="video-source" src="https://raw.githubusercontent.com/lpxs8/Babisensi/e890922afb3f011e5660e897f609b53b389f3606/Jogando%20salinha%20%20%20.....%23freefire%20%23freefirevideo%20%23freefiregirls.mp4" type="video/mp4">
+</video>
+
+<!-- IMAGEM DEPOIS DO VÍDEO -->
+<img id="bg-image" src="https://raw.githubusercontent.com/lpxs8/Babisensi/4c253d27b02257a8c81226ca432deb618d606ed8/image_Pippit_202505041405.jpeg" alt="Imagem Final" />
+
+<div class="container" id="conteudo">
+  <h1>🎉 Parabéns! 🎉</h1>
+  <p>Obrigado por comprar a sensi da Babi! Agora você vai ficar capudo igual a MDM 😎🔥</p>
+
+  <div class="social-section">
+    <h2>📢 Caso não siga a MDM em alguma dessas redes, siga agora!</h2>
+    <br>
+    <div class="social-links">
+      <a href="https://www.instagram.com/babixll/" target="_blank">Instagram</a> |
+      <a href="https://www.tiktok.com/@babi__mdm" target="_blank">TikTok</a> |
+      <a href="https://www.youtube.com/@babimdm" target="_blank">YouTube</a>
+    </div>
+  </div>
+
+  <div class="video-block">
+    <iframe width="300" height="170" src="https://www.youtube.com/embed/ObyYdxY7PYY" frameborder="0" allowfullscreen></iframe>
+    <iframe width="300" height="170" src="https://www.youtube.com/embed/2HMWuHhBCXU" frameborder="0" allowfullscreen></iframe>
+    <iframe width="300" height="170" src="https://www.youtube.com/embed/9m7QxhN52fE" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div style="margin-top: 40px;">
+  <h2>🎉 Faça o download da Sensi abaixo! 🎉</h2>
+  <br>
+<h3><span style="font-size: 5rem;">👇</span></h3>
+  <br>
+  <br>
+    <a href="https://www.mediafire.com/file/pwy46a7oqx2zc3w/Sensi+e+config+da+Babi+Emu.rar/file" target="_blank">
+      <button>📥 Baixar sensi (MediaFire)</button>
+    </a>
+  </div>
+
+  <footer>© 2025 BABI MDM</footer>
+
+  <script>
+    const videoElement = document.getElementById('bg-video');
+    const videoSourceElement = document.getElementById('video-source');
+    const imageElement = document.getElementById('bg-image');
+
+    const videoSources = [
+      "https://raw.githubusercontent.com/lpxs8/Babisensi/e890922afb3f011e5660e897f609b53b389f3606/Jogando%20salinha%20%20%20.....%23freefire%20%23freefirevideo%20%23freefiregirls.mp4",
+      "https://raw.githubusercontent.com/lpxs8/Babisensi/4c253d27b02257a8c81226ca432deb618d606ed8/Jogando%20salinha%20%20_%20%20....%23freefirebrasil%20%23freefire%20%23freefirereels.mp4"
+    ];
+
+    let currentVideoIndex = 0;
+
+    videoElement.onended = function() {
+      currentVideoIndex++;
+      if (currentVideoIndex < videoSources.length) {
+        videoSourceElement.src = videoSources[currentVideoIndex];
+        videoElement.load();
+        videoElement.play();
+      } else {
+        // Esconde vídeo e mostra imagem final
+        videoElement.style.display = "none";
+        imageElement.style.display = "block";
+      }
+    };
+  </script>
+</body>
+</html>
