@@ -117,11 +117,11 @@
 
 <!-- VÍDEO DE FUNDO -->
 <video autoplay muted id="bg-video">
-  <source id="video-source" src="https://files.catbox.moe/hgtf56.mp4" type="video/mp4">
+  <source src="https://files.catbox.moe/hgtf56.mp4" type="video/mp4">
 </video>
 
-<!-- IMAGEM DEPOIS DO VÍDEO -->
-<img id="bg-image" src="https://github.com/lpxs8/babisensix/blob/d5d37c2350fb6a97af0cd1caee64155ddc8a3747/foto%20de%20fundo.jpg" alt="Imagem Final" />
+<!-- IMAGEM FIXA QUE APARECE DEPOIS DO VÍDEO -->
+<img id="bg-image" src="https://raw.githubusercontent.com/lpxs8/babisensix/d5d37c2350fb6a97af0cd1caee64155ddc8a3747/foto%20de%20fundo.jpg" alt="Imagem Final" />
 
 <div class="container" id="conteudo">
   <h1>🎉 Parabéns! 🎉</h1>
@@ -153,10 +153,10 @@
 
   <footer>© 2025 BABI MDM</footer>
 
+  <!-- SCRIPT -->
   <script>
-    const videoElement = document.getElementById('bg-video');
-    const videoSourceElement = document.getElementById('video-source');
-    const imageElement = document.getElementById('bg-image');
+    const video = document.getElementById("bg-video");
+    const image = document.getElementById("bg-image");
 
     const videoSources = [
       "https://files.catbox.moe/hgtf56.mp4"
