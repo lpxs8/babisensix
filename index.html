@@ -153,28 +153,15 @@
 
   <footer>© 2025 BABI MDM</footer>
 
+
   <!-- SCRIPT -->
   <script>
     const video = document.getElementById("bg-video");
     const image = document.getElementById("bg-image");
 
-    const videoSources = [
-      "https://files.catbox.moe/hgtf56.mp4"
-    ];
-
-    let currentVideoIndex = 0;
-
-    videoElement.onended = function() {
-      currentVideoIndex++;
-      if (currentVideoIndex < videoSources.length) {
-        videoSourceElement.src = videoSources[currentVideoIndex];
-        videoElement.load();
-        videoElement.play();
-      } else {
-        // Esconde vídeo e mostra imagem final
-        videoElement.style.display = "none";
-        imageElement.style.display = "block";
-      }
+    video.onended = function() {
+      video.style.display = "none";
+      image.style.display = "block";
     };
   </script>
 </body>
