@@ -111,6 +111,26 @@
       border-radius: 10px;
       border: none;
     }
+
+    /* Rastro rosa */
+    .trail {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      pointer-events: none;
+      background: #ff69b4;
+      opacity: 1;
+      animation: fade 1s linear forwards;
+      z-index: 9999;
+    }
+
+    @keyframes fade {
+      to {
+        opacity: 0;
+        transform: scale(2);
+      }
+    }
   </style>
 </head>
 <body>
@@ -135,34 +155,52 @@
       <a href="https://www.tiktok.com/@babi__mdm" target="_blank">TikTok</a> |
       <a href="https://www.youtube.com/@babimdm" target="_blank">YouTube</a>
     </div>
+  </div>
+
 <div class="video-block">
-  <iframe width="300" height="170" src="https://www.youtube.com/embed/tKkX2ADGgMU" frameborder="0" allowfullscreen></iframe>
-  <iframe width="300" height="170" src="https://www.youtube.com/embed/Qoqfli2l92o" frameborder="0" allowfullscreen></iframe>
-  <iframe width="300" height="170" src="https://www.youtube.com/embed/39NOlXICItM" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/mvCN9PRHprA" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/5bErUYT0WfY" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/7wRQ27KM6cQ" allowfullscreen></iframe>
 </div>
+
   <div style="margin-top: 40px;">
-  <h2>🎉 Faça o download da Sensi abaixo! 🎉</h2>
-  <br>
-<h3><span style="font-size: 5rem;">👇</span></h3>
-  <br>
-  <br>
+    <h2>🎉 Faça o download da Sensi abaixo! 🎉</h2>
+    <br>
+    <h3><span style="font-size: 5rem;">👇</span></h3>
+    <br><br>
     <a href="https://www.mediafire.com/file/353x14suoilaeq0/Sensi+Atualizada+Babi.rar/file" target="_blank">
       <button>📥 Baixar sensi (MediaFire)</button>
     </a>
   </div>
 
   <footer>© 2025 BABI MDM</footer>
+</div>
 
+<!-- SCRIPT PARA MUDAR DE VÍDEO PARA IMAGEM -->
+<script>
+  const video = document.getElementById("bg-video");
+  const image = document.getElementById("bg-image");
 
-  <!-- SCRIPT -->
-  <script>
-    const video = document.getElementById("bg-video");
-    const image = document.getElementById("bg-image");
+  video.onended = function() {
+    video.style.display = "none";
+    image.style.display = "block";
+  };
+</script>
 
-    video.onended = function() {
-      video.style.display = "none";
-      image.style.display = "block";
-    };
-  </script>
+<!-- SCRIPT DO RASTRO ROSA -->
+<script>
+  document.addEventListener("mousemove", function(e) {
+    const trail = document.createElement("div");
+    trail.className = "trail";
+    trail.style.left = e.pageX + "px";
+    trail.style.top = e.pageY + "px";
+    document.body.appendChild(trail);
+    setTimeout(() => {
+      trail.remove();
+    }, 1000);
+  });
+</script>
+
 </body>
 </html>
+
